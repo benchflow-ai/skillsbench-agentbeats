@@ -41,7 +41,7 @@
   },
 
   program: {
-    image: "ghcr.io/benchflow-ai/skillsbench-agentbeats-worker@sha256:21047d9bb768b5aaf0cff83cf9891b8c297db3d43485448625098da8cce87037",
+    image: "ghcr.io/benchflow-ai/skillsbench-agentbeats-worker@sha256:c554fbc2570fe60221271e0b141eedc64c892d2863a5a50f415245a761f840f4",
     entrypoint: [
       "uv",
       "run",
