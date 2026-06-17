@@ -1,0 +1,7 @@
+{
+  "citation-check": "ghcr.io/benchflow-ai/skillsbench-task-env@sha256:8ba4740e9edfe7bb0d071c6e64f788e5652a47fc24fc0e7c74bdb2f896877233",
+  "court-form-filling": "ghcr.io/benchflow-ai/skillsbench-task-env@sha256:37bdea4e2b901e0a11724a1a6f79b12921349185e490976d7891d7a1cd08a5e8",
+  "dialogue-parser": "ghcr.io/benchflow-ai/skillsbench-task-env@sha256:c7885a97b18332bb9a5853ab26851a5f0fbeca7d04ef8c1c757ad610f13478e6",
+  "offer-letter-generator": "ghcr.io/benchflow-ai/skillsbench-task-env@sha256:92a50feb1057ca03680a1fca2c3631651911cf58f735584a7d18c797056ea5b4",
+  "powerlifting-coef-calc": "ghcr.io/benchflow-ai/skillsbench-task-env@sha256:c2566e89561d86afdaa524798249dee56a0626a9608c9a6dc4e6c626ee6f7954"
+}

@@ -1,0 +1,24 @@
+# Legacy manual-submit placeholder retained because the AgentBeats tutorial still
+# mentions scenario.toml. The active scenario definition for this repository is
+# scenario.json5. GitHub Actions workflows intentionally live in the leaderboard
+# repository for now.
+#
+# Do not add fake AgentBeats IDs here. Fill registered IDs only after the
+# AgentBeats app registration step.
+
+[green_agent]
+agentbeats_id = ""
+env = { API_KEY = "${GITHUB_SECRET_NAME}", LOG_LEVEL = "INFO" }
+
+[[participants]]
+agentbeats_id = ""
+name = "role_1_name"
+env = {}
+
+[[participants]]
+agentbeats_id = ""
+name = "role_2_name"
+env = {}
+
+[config]
+# Add your assessment config here

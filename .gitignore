@@ -1,0 +1,7 @@
+results/
+submissions/
+.env
+.env.*
+*.log
+.DS_Store
+node_modules/

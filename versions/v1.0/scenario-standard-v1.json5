@@ -1,0 +1,85 @@
+{
+  manifest_version: "0.4.0",
+  experimental_features: ["docker"],
+
+  config_schema: {
+    type: "object",
+    properties: {
+      agent_under_test: {
+        type: "object",
+        properties: {
+          harness: {
+            type: "string",
+            enum: ["openhands", "opencode", "claude-code", "codex", "gemini-cli", "terminus", "pi"],
+            default: "openhands",
+          },
+          api_key: { type: "string", secret: true },
+          model: {
+            type: "string",
+            default: "gemini/gemini-3.5-flash",
+          },
+          timeout_sec: {
+            type: "integer",
+            default: 900,
+          },
+        },
+        required: ["api_key"],
+        additionalProperties: false,
+      },
+    },
+    required: ["agent_under_test"],
+    additionalProperties: false,
+  },
+
+  components: {
+    gateway: {
+      manifest: "https://raw.githubusercontent.com/RDI-Foundation/agentbeats-gateway/refs/tags/v0.3/amber-manifest.json5",
+      config: {
+        assessment_config: {
+          tasks: "all",
+          task_set: "standard-v1",
+          condition: "with_skills",
+          allow_excluded_tasks: false,
+          shard_index: 0,
+          num_shards: 7,
+          // After AgentBeats purple-agent registration, add:
+          // participant_ids: { agent: "<registered-purple-agentbeats-uuid>" },
+        },
+        participant_roles: { green: "skillsbench_green", purple1: "agent" },
+      },
+    },
+    skillsbench_green: {
+      manifest: "./green-agent.json5",
+      config: {},
+    },
+    agent_under_test: {
+      manifest: "./participant-agent-under-test.json5",
+      config: {
+        harness: "${config.agent_under_test.harness}",
+        api_key: "${config.agent_under_test.api_key}",
+        model: "${config.agent_under_test.model}",
+        timeout_sec: "${config.agent_under_test.timeout_sec}",
+      },
+    },
+  },
+
+  bindings: [
+    { to: "#gateway.green", from: "#skillsbench_green.a2a" },
+    { to: "#gateway.purple1", from: "#agent_under_test.a2a" },
+    { to: "#skillsbench_green.proxy", from: "#gateway.proxy", weak: true },
+  ],
+
+  exports: { results: "#gateway.results" },
+
+  metadata: {
+    agentbeats_ids: {
+      skillsbench_green: "",
+      agent: "",
+      agent_under_test: "",
+    },
+    worker_mode: "embedded_green_worker",
+    task_set: "standard-v1",
+    runtime_first: true,
+    num_shards: 7,
+  },
+}
