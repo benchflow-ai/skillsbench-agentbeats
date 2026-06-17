@@ -29,5 +29,5 @@ It intentionally excludes historical `results/`, `submissions/`, and GitHub Acti
 ## Source References
 
 - v1.1 SkillsBench source revision: `38eb0f83cf93a566de846957fcc45e720a172f31`
-- v1.1 leaderboard config source snapshot: `daf18759c61b0b3da42228c0d3262721141129c3`
+- v1.1 leaderboard config source snapshot: `4d2aca308160b71bad3c0ec40e421921df5229c6`
 - v1.0 preserved from the previous live AgentBeats manifest snapshot around `98029394069e05958fcbc164ea3f8c1b0d85e723`
