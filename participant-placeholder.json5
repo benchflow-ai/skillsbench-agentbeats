@@ -8,7 +8,7 @@
   },
 
   program: {
-    image: "ghcr.io/benchflow-ai/skillsbench-agentbeats-purple@sha256:ab6b8e88a0df74f5d44f5c59cc52695a30dd15b3a94a11b38785ddf4ae0bede1",
+    image: "ghcr.io/benchflow-ai/skillsbench-agentbeats-purple@sha256:81f32c58ef53b8cb09e703e07f70478b6ebb29a444606ae7ba8f00e77b85104c",
     entrypoint: "uv run --no-sync python -m skillsbench_agentbeats.placeholder_agent --host 0.0.0.0 --port 9010",
     network: {
       endpoints: [
