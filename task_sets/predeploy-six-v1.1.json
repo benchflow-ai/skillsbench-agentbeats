@@ -1,0 +1,80 @@
+{
+  "schema_version": "skillsbench.agentbeats.task_set.v1",
+  "task_set": "predeploy-six-v1.1",
+  "condition": "with_skills",
+  "allow_excluded_tasks": false,
+  "shard_index": 0,
+  "num_shards": 1,
+  "task_count": 6,
+  "tasks": [
+    {
+      "task_id": "jax-computing-basics",
+      "task_digest": "sha256:85f8adc808c68bfacd1fa06b17b91bb82b09aac0848c2ba55e512feb84137b35",
+      "category": "software-engineering",
+      "difficulty": "medium",
+      "tags": [
+        "jax-language",
+        "numerical-computing"
+      ]
+    },
+    {
+      "task_id": "python-scala-translation",
+      "task_digest": "sha256:d84a2aae85cce5480402fed5095a06495efa07a4ca458505171515d7707fc013",
+      "category": "software-engineering",
+      "difficulty": "medium",
+      "tags": [
+        "translation",
+        "scala",
+        "python"
+      ]
+    },
+    {
+      "task_id": "jpg-ocr-stat",
+      "task_digest": "sha256:7a6137d973f6ddd03ec7fbce9a11f95be9c8ca553efdf681e35d3a186184f968",
+      "category": "office-white-collar",
+      "difficulty": "hard",
+      "tags": [
+        "image ocr",
+        "data statistics"
+      ]
+    },
+    {
+      "task_id": "grid-dispatch-operator",
+      "task_digest": "sha256:60c5bca1ec15bdb2053dd672016f8153ce6e64c922f8b0fc0a73228ff24e25b4",
+      "category": "industrial-physical-systems",
+      "difficulty": "medium",
+      "tags": [
+        "energy",
+        "large-scale-energy-market-clearing",
+        "optimization",
+        "power-flow",
+        "dc-opf"
+      ]
+    },
+    {
+      "task_id": "threejs-to-obj",
+      "task_digest": "sha256:a6685ad8902228229c50d82684f0600fbc9a387f96e19378b4bfc8de150ff268",
+      "category": "media-content-production",
+      "difficulty": "medium",
+      "tags": [
+        "threejs",
+        "obj",
+        "3d",
+        "node",
+        "javascript"
+      ]
+    },
+    {
+      "task_id": "data-to-d3",
+      "task_digest": "sha256:6bd955ce55b21352a441a5706b0e3faaad42b37891145e614b27387f44d38808",
+      "category": "software-engineering",
+      "difficulty": "medium",
+      "tags": [
+        "d3.js",
+        "data-visualization",
+        "interactive-charts"
+      ]
+    }
+  ],
+  "task_set_digest": "sha256:fa8204feeaf40f166e4eeeb635dcaede5adfddfda9a3b80742d878fb4f851253"
+}

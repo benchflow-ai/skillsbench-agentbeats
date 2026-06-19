@@ -1,0 +1,8 @@
+{
+  "jax-computing-basics": "ghcr.io/benchflow-ai/skillsbench-task-env@sha256:798b9e069fccc19d0e28a985f681e9c37f1a67093c8bd3f67830c7f921e4091b",
+  "python-scala-translation": "ghcr.io/benchflow-ai/skillsbench-task-env@sha256:003145e864aa523f5716e3dd1af1fc5843fb0280948d409b8a55d3285e4db16a",
+  "jpg-ocr-stat": "ghcr.io/benchflow-ai/skillsbench-task-env@sha256:955e6187246bc603546c8b0ec72760ac8c55d411ecfd0dcd30a120474527062f",
+  "grid-dispatch-operator": "ghcr.io/benchflow-ai/skillsbench-task-env@sha256:9a05d40ee8001cc5befaf61ed7b7810548c12ce0c82752e29f424a8a3f152141",
+  "threejs-to-obj": "ghcr.io/benchflow-ai/skillsbench-task-env@sha256:cb8495e8147bc4ae0751bd36f7dfb83552eb1f74aad7e255f97c3b3f43fdf22d",
+  "data-to-d3": "ghcr.io/benchflow-ai/skillsbench-task-env@sha256:4cebcdf0d152a1f3bee6548fd4d55d167f62ca9cc035bab17b75ca5fbc56897c"
+}
