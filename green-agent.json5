@@ -11,6 +11,7 @@
       private_proof_retention: { type: "string", default: "github-actions-smoke-debug-only" },
       require_durable_private_proof: { type: "boolean", default: false },
       sandbox_participant_proxy_url: { type: "string" },
+      worker_timeout_sec: { type: "integer", default: 14400 },
     },
     additionalProperties: false,
   },
@@ -26,7 +27,7 @@
     env: {
       SKILLSBENCH_AGENTBEATS_PROXY_URL: "${slots.proxy.url}",
       SKILLSBENCH_WORKER_URL: "http://127.0.0.1:9010",
-      SKILLSBENCH_WORKER_TIMEOUT_SEC: "3600",
+      SKILLSBENCH_WORKER_TIMEOUT_SEC: "${config.worker_timeout_sec}",
       SKILLSBENCH_WORKER_POLL_INTERVAL_SEC: "1.0",
       SKILLSBENCH_WORKER_REVISION: "41e1b98aaf36f5a6c40896286561ded89ccf09d8",
       SKILLSBENCH_REVISION: "41e1b98aaf36f5a6c40896286561ded89ccf09d8",
