@@ -47,7 +47,7 @@
   },
 
   program: {
-    image: "ghcr.io/benchflow-ai/skillsbench-agentbeats-purple@sha256:12ec4bc1183f06e637d71223961508fc9da8ecaed93e48cd35c6b223532007df",
+    image: "ghcr.io/benchflow-ai/skillsbench-agentbeats-purple@sha256:8d39fe6a3bedc542fb2658b3c6db9d375fe8e3e298101f9e4c25a9c58c54e0a7",
     entrypoint: "uv run --no-sync python -m skillsbench_agentbeats.agent_under_test --host 0.0.0.0 --port 9010",
     env: {
       SKILLSBENCH_AGENT_API_KEY: { when: "config.api_key", value: "${config.api_key}" },
