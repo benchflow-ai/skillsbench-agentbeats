@@ -1,34 +1,34 @@
 {
   "components": {
     "green": {
-      "image": "ghcr.io/benchflow-ai/skillsbench-agentbeats-green@sha256:9de54590f9de86fea619203fe5e577b69d05ce8a38a77b5d3cbe30c6eb078ba4",
-      "image_digest": "sha256:9de54590f9de86fea619203fe5e577b69d05ce8a38a77b5d3cbe30c6eb078ba4",
+      "image": "ghcr.io/benchflow-ai/skillsbench-agentbeats-green@sha256:81c4b51ffe5f20741bcd92d5428889c5e271fd3e6767dd8c3b68513eeb9e160e",
+      "image_digest": "sha256:81c4b51ffe5f20741bcd92d5428889c5e271fd3e6767dd8c3b68513eeb9e160e",
       "image_platform": "linux/amd64",
       "manifest_path": "integrations/agentbeats/green_agent/amber-manifest.json5"
     },
     "purple": {
-      "image": "ghcr.io/benchflow-ai/skillsbench-agentbeats-purple@sha256:8d39fe6a3bedc542fb2658b3c6db9d375fe8e3e298101f9e4c25a9c58c54e0a7",
-      "image_digest": "sha256:8d39fe6a3bedc542fb2658b3c6db9d375fe8e3e298101f9e4c25a9c58c54e0a7",
+      "image": "ghcr.io/benchflow-ai/skillsbench-agentbeats-purple@sha256:94b897afb3563315502089f1c715d42deae1c92cdbb48638f4675dc76b1e8395",
+      "image_digest": "sha256:94b897afb3563315502089f1c715d42deae1c92cdbb48638f4675dc76b1e8395",
       "image_platform": "linux/amd64",
       "manifest_path": "integrations/agentbeats/agent_under_test/amber-manifest.json5"
     },
     "worker": {
-      "image": "ghcr.io/benchflow-ai/skillsbench-agentbeats-worker@sha256:fd9cd8a1d034f057e7fd8294e18f841fa413b4e3707c5c9bdacd6a0d31af32a8",
-      "image_digest": "sha256:fd9cd8a1d034f057e7fd8294e18f841fa413b4e3707c5c9bdacd6a0d31af32a8",
+      "image": "ghcr.io/benchflow-ai/skillsbench-agentbeats-worker@sha256:7051ed09977f53aac2932d28409bfb6d7a0d27abd97c4ee60d33375afd0dcfa4",
+      "image_digest": "sha256:7051ed09977f53aac2932d28409bfb6d7a0d27abd97c4ee60d33375afd0dcfa4",
       "image_platform": "linux/amd64",
       "manifest_path": "integrations/agentbeats/worker/amber-manifest.json5"
     }
   },
-  "image_tag": "skillsbench-v1.1-terminal-guard-31fe723d",
+  "image_tag": "skillsbench-v1.1-terminal-receipt-a120196f",
   "public_readiness_images": {
-    "green_image": "ghcr.io/benchflow-ai/skillsbench-agentbeats-green@sha256:9de54590f9de86fea619203fe5e577b69d05ce8a38a77b5d3cbe30c6eb078ba4",
-    "green_image_digest": "sha256:9de54590f9de86fea619203fe5e577b69d05ce8a38a77b5d3cbe30c6eb078ba4",
+    "green_image": "ghcr.io/benchflow-ai/skillsbench-agentbeats-green@sha256:81c4b51ffe5f20741bcd92d5428889c5e271fd3e6767dd8c3b68513eeb9e160e",
+    "green_image_digest": "sha256:81c4b51ffe5f20741bcd92d5428889c5e271fd3e6767dd8c3b68513eeb9e160e",
     "green_image_platform": "linux/amd64",
-    "purple_image": "ghcr.io/benchflow-ai/skillsbench-agentbeats-purple@sha256:8d39fe6a3bedc542fb2658b3c6db9d375fe8e3e298101f9e4c25a9c58c54e0a7",
-    "purple_image_digest": "sha256:8d39fe6a3bedc542fb2658b3c6db9d375fe8e3e298101f9e4c25a9c58c54e0a7",
+    "purple_image": "ghcr.io/benchflow-ai/skillsbench-agentbeats-purple@sha256:94b897afb3563315502089f1c715d42deae1c92cdbb48638f4675dc76b1e8395",
+    "purple_image_digest": "sha256:94b897afb3563315502089f1c715d42deae1c92cdbb48638f4675dc76b1e8395",
     "purple_image_platform": "linux/amd64",
-    "worker_image": "ghcr.io/benchflow-ai/skillsbench-agentbeats-worker@sha256:fd9cd8a1d034f057e7fd8294e18f841fa413b4e3707c5c9bdacd6a0d31af32a8",
-    "worker_image_digest": "sha256:fd9cd8a1d034f057e7fd8294e18f841fa413b4e3707c5c9bdacd6a0d31af32a8",
+    "worker_image": "ghcr.io/benchflow-ai/skillsbench-agentbeats-worker@sha256:7051ed09977f53aac2932d28409bfb6d7a0d27abd97c4ee60d33375afd0dcfa4",
+    "worker_image_digest": "sha256:7051ed09977f53aac2932d28409bfb6d7a0d27abd97c4ee60d33375afd0dcfa4",
     "worker_image_platform": "linux/amd64"
   },
   "public_readiness_task_environment_images": {
@@ -558,7 +558,7 @@
     ]
   },
   "schema_version": "skillsbench.agentbeats.deploy_bundle.v1",
-  "source_revision": "31fe723df7dd69749c78ebad19e811d51f5c4d80",
+  "source_revision": "a120196f470aaa39943fc7b2a5bf37929fffff89",
   "task_set": {
     "task_count": 87,
     "task_set": "skillsbench-v1.1",
