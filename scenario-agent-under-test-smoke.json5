@@ -23,7 +23,7 @@
           },
           timeout_sec: {
             type: "integer",
-            default: 900,
+            default: 1800,
           },
         },
         required: ["api_key"],
